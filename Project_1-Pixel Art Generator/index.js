@@ -96,7 +96,7 @@ clearGridButton.addEventListener("click", () => {container.innerHTML = "";});
 
 eraseBtn.addEventListener("click", () => {erase = true;});
 
-paintBtn.addEventListener("click", () => {draw = true;});
+paintBtn.addEventListener("click", () => {erase = false;});
 
 gridHeight.addEventListener("input", () => {
     heightValue.innerHTML = (gridHeight.value > 9)? gridHeight.value: `0${gridHeight.value}`;
